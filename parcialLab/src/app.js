@@ -7,6 +7,7 @@ require("dotenv").config()
 
 const app = express()
 
+app.use(express.json())
 app.use("/books",bookRouter)
 app.use("/authors",authorRouter)
 
